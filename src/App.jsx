@@ -1,14 +1,41 @@
-import React from "react";
+import styles from "./style";
+import {
+  Navbar,
+  Hero,
+  Stats,
+  Business,
+  Billing,
+  CardDeal,
+  Testimonials,
+  Clients,
+  CTA,
+  Footer,
+} from "./components";
 
-function App() {
-  return (
-    <div className="bg-zinc-800 h-screen w-full text-sky-100 font-semibold p-4">
-      <div className="w-fit border border-rose-100 rounded-md p-3 hover:bg-zinc-600 duration-300 ease-in-out m-2">
-        hello my name is abhi Lorem ipsnseicing elit. Laborum dolor assumenda
-        nihil fugit res doloremque atque sunt iusto, exercitationem ea.
+
+
+
+const App = () => (
+  <div className="bg-primary w-full text-blue-200 overflow-hidden">
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Navbar />
       </div>
     </div>
-  );
-}
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Stats />
+        <Business />
+        <Billing />
+        <cardDeal />
+        <Testimonials />
+        <Clients />
+        <CTA />
+        <Footer />
+      </div>
+    </div>
+  </div>
+);
 
 export default App;
