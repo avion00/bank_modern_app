@@ -8,7 +8,7 @@ const Hero = () => (
     >
       <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
         <img src={discount} alt="discount" className="w-[32px0 h-[32px]" />
-        <span className="text-white">20% abhishek chaudahry</span>
+        <span className="text-white">20% abhishek chaudahry from dhanpalthan 4</span>
       </div>
     </div>
   </section>
